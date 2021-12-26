@@ -1,0 +1,20 @@
+#fondo-principal {
+  background: url("../images/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.image-box {
+  background: url("../images/grass-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  border: 3px solid rgb(0, 0, 0);
+  height: 500px;
+  width: 600px;
+  display: inline-flex;
+  margin: auto;
+}
+
+#doggy {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}

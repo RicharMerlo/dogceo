@@ -5,35 +5,44 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="icon" href="images/huella.png" type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link href="styles/bootstrap.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link href="styles/app.css" rel="stylesheet">
 
-  <title>Dog Searcher</title>
+  <title>Buscador de perritos</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-light bg-light">
+<body id="fondo-principal">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand">Buscardor de perritos</a>
-      <form class="d-flex">
-        <input id="inp-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-          list="dogbreeds">
-        <datalist id="dogbreeds"></datalist>
-        <button class="btn btn-outline-success" type="button" id="btn-search">Buscar</button>
-      </form>
+      <a class="navbar-brand">
+        <img src="images/huella.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Buscardor de razas de perritos</a>
     </div>
   </nav>
   <!-- Container -->
   <div class="container mb-5 mt-5">
-    <div id="dog" class="row justify-content-center">
-      <img id="doggy" class="d-block w-50" src="images/wanteddog.jpg" alt="doggy">
+    <div id="dog" class="row">
+      <div class="image-box">
+        <img id="doggy" src="images/wanteddog.jpg" alt="doggy">
+      </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+      <div class="col-4 d-flex">
+        <input id="inp-search" class="form-control me-2" type="search" placeholder="Escribe una raza" aria-label="Escribe una raza"
+          list="dogbreeds">
+        <button class="btn btn-success" type="button" id="btn-search">Buscar</button>
+        <datalist id="dogbreeds"></datalist>
+      </div>
     </div>
   </div>
   <!-- Bootstrap -->
   <script src="scripts/bootstrap.js"></script>
   <!-- Jquery -->
   <script src="scripts/jquery-3.6.0.js"></script>
+  <!-- Custom Script -->
   <script src="scripts/app.js"></script>
 </body>
 
