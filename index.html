@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="styles/bootstrap.css" rel="stylesheet">
+
+  <title>Dog Searcher</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Buscardor de perritos</a>
+      <form class="d-flex">
+        <input id="inp-search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+          list="dogbreeds">
+        <datalist id="dogbreeds"></datalist>
+        <button class="btn btn-outline-success" type="button" id="btn-search">Buscar</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Container -->
+  <div class="container mb-5 mt-5">
+    <div id="dog" class="row justify-content-center">
+      <img id="doggy" class="d-block w-50" src="images/wanteddog.jpg" alt="doggy">
+    </div>
+  </div>
+  <!-- Bootstrap -->
+  <script src="scripts/bootstrap.js"></script>
+  <!-- Jquery -->
+  <script src="scripts/jquery-3.6.0.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
